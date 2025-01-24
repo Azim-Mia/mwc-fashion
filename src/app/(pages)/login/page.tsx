@@ -40,7 +40,6 @@ const LoginPage =()=>{
     <input type="email" id="email" name="email" placeholder="example@gmail.com"  className="ring-2 ring-gary-300 rounded-md p-4"/> 
     </div>
     ):(<div>
-      <lable forhtml="code">Email verification : </lable>
     <input type="code" id="code" name="email" placeholder="emailCode"  className="ring-2 ring-gary-300 rounded-md p-4"/> 
     </div>)
     }

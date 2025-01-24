@@ -1,4 +1,4 @@
-import Image from "next/image";
+//import Image from "next/image";
 import Slider from '@/components/Slider';
 import ProductList  from '@/components/ProductList'
 import CategoryList from  '@/components/CategoryList'

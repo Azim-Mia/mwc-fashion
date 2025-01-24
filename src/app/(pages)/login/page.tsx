@@ -27,6 +27,7 @@ const LoginPage =()=>{
   ? "Login" : mode === MODL.REGISTER 
   ? "Register" : mode === MODL.RESET_PASSWORD ? "Reset" : "Verify";
  // const wixClient = useWixClient();
+  console.log(formTitle)
   return (<div className ="w-[calc(100vh - 80px)] px-4 md:px-8 lg:px-16 xl:px-32 2xl:px-64 flex items-center justify-center text-center">
   <form className="flex flex-col gap-8"> 
  <h1 className = "text-2xl font-semibold">{formTitle}</h1>

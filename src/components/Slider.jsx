@@ -24,7 +24,7 @@ const Slider = ()=>{
 </div>
 {/*IMAGE CONTEINER*/}
 <div className="relative h-1/2 xl:w-1/2 xl:h-full">
-<Link href={`/fashion-bd/${current + 1}`}><Image src ={slide.img} fill alt="prodcts" size="100%" className="sm:h-full object-cover"/></Link> 
+<Link href={`/mwc-fashion/${current + 1}`}><Image src ={slide.img} fill alt="prodcts" size="100%" className="sm:h-full object-cover"/></Link> 
 <div className="absolute text-center left-1/2 flex gap-4 sm:bottom-1 xs:bottom-1">
   {slideData.map((slide,index)=>(
   <div className={`w-4 h-4 sm:w-7 sm:h-7 md:w-7 md:h-7 rounded-full ring-2 bg-red cursor-pointer flex bt-0 ${current === index ? "scale-150":""}`} key={slide.id} onClick={()=>setCurrent(index)}>

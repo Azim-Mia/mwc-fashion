@@ -51,6 +51,7 @@ const LoginPage =()=>{
     <input type="text" id="userName" name="username" placeholder="Enter Name"  className="ring-2 ring-gary-300 rounded-md p-4"/> 
     </div>
     ):null}
+    <p>{buttonTitle}</p>
   </form>
   </div>)
 }

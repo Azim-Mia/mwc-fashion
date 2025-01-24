@@ -32,13 +32,11 @@ const LoginPage =()=>{
   <form className="flex flex-col gap-8"> 
  <h1 className = "text-2xl font-semibold">{formTitle}</h1>
     { mode === MODL.REGISTER ? (<div>
-      <lable forhtml="userName">Username</lable>
     <input type="text" id="userName" name="username" placeholder="Enter Name"  className="ring-2 ring-gary-300 rounded-md p-4"/> 
     </div>
     ):null}
     {
      mode === MODL.EMAIL_VERIFICATION ? (<div>
-      <lable forhtml="email">E-mail: </lable>
     <input type="email" id="email" name="email" placeholder="example@gmail.com"  className="ring-2 ring-gary-300 rounded-md p-4"/> 
     </div>
     ):(<div>
@@ -47,7 +45,6 @@ const LoginPage =()=>{
     </div>)
     }
       { mode === MODL.REGISTER ? (<div>
-      <lable forhtml="userName">Username</lable>
     <input type="text" id="userName" name="username" placeholder="Enter Name"  className="ring-2 ring-gary-300 rounded-md p-4"/> 
     </div>
     ):null}

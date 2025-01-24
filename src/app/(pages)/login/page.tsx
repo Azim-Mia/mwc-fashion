@@ -2,8 +2,8 @@
 import {useState} from 'react';
 
 const LoginPage =()=>{
-  const [mode, setMode] = useState('');
-  const [userName, setUserName] = useState('');
+  const [mode] = useState('');
+  /*const [userName, setUserName] = useState('');
   const [userEmail, setUserEmail] = useState('');
   const [password, setPassword] =useState('');
   const [emailCode, setEmailCode] = useState(null);
@@ -12,6 +12,7 @@ const LoginPage =()=>{
   const [message, setMessage] = useState('');
   const [error, setError] = useState('')
   console.log(userName,password,emailCode,resetPassword,isLoading,message,error,userName)
+  */
 enum MODL {
     LOGIN = "LOGIN",
     REGISTER = "REGISTER",
@@ -29,22 +30,22 @@ enum MODL {
   <form className="flex flex-col gap-8"> 
  <h1 className = "text-2xl font-semibold">{formTitle}</h1>
     { mode === MODL.REGISTER ? (<div>
-      <lable forhtml="userName">Username</lable>
+      <label forhtml="userName">Username</label>
     <input type="text" id="userName" name="username" placeholder="Enter Name"  className="ring-2 ring-gary-300 rounded-md p-4"/> 
     </div>
     ):null}
     {
      mode === MODL.EMAIL_VERIFICATION ? (<div>
-      <lable forhtml="email">E-mail: </lable>
+      <label forhtml="email">E-mail: </label>
     <input type="email" id="email" name="email" placeholder="example@gmail.com"  className="ring-2 ring-gary-300 rounded-md p-4"/> 
     </div>
     ):(<div>
-      <lable forhtml="code">Email verification : </lable>
+      <label forhtml="code">Email verification : </label>
     <input type="code" id="code" name="email" placeholder="emailCode"  className="ring-2 ring-gary-300 rounded-md p-4"/> 
     </div>)
     }
       { mode === MODL.REGISTER ? (<div>
-      <lable forhtml="userName">Username</lable>
+      <label forhtml="userName">Username</label>
     <input type="text" id="userName" name="username" placeholder="Enter Name"  className="ring-2 ring-gary-300 rounded-md p-4"/> 
     </div>
     ):null}

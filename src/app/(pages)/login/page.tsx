@@ -2,7 +2,8 @@
 import {useState} from 'react';
 
 const LoginPage =()=>{
-  const [mode, setMode] = useState('');
+  const [mode] = useState('');
+  /*
   const [userName, setUserName] = useState('');
   const [userEmail, setUserEmail] = useState('');
   const [password, setPassword] =useState('');
@@ -11,7 +12,9 @@ const LoginPage =()=>{
   const [isLoading, setIsLoading] = useState(false);
   const [message, setMessage] = useState('');
   const [error, setError] = useState('')
-enum MODL {
+  */
+
+  enum MODL {
     LOGIN = "LOGIN",
     REGISTER = "REGISTER",
     EMAIL_VERIFICATION = "EMAIL_VERIFICATION",

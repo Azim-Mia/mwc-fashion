@@ -11,6 +11,7 @@ const LoginPage =()=>{
   const [isLoading, setIsLoading] = useState(false);
   const [message, setMessage] = useState('');
   const [error, setError] = useState('')
+  console.log(userName,password,emailCode,resetPassword,isLoading,message,error,userName)
 enum MODL {
     LOGIN = "LOGIN",
     REGISTER = "REGISTER",

@@ -3,15 +3,15 @@ import {useState} from 'react';
 
 const LoginPage =()=>{
   const [mode] = useState('');
-  const [userName, setUserName] = useState('');
-  const [userEmail, setUserEmail] = useState('');
-  const [password, setPassword] =useState('');
-  const [emailCode, setEmailCode] = useState(null);
-  const [resetPassword, setReserPassword] = useState('');
-  const [isLoading, setIsLoading] = useState(false);
-  const [message, setMessage] = useState('');
-  const [error, setError] = useState('')
-  console.log(userName,password,emailCode,resetPassword,isLoading,message,error,userName)
+  //const [userName, setUserName] = useState('');
+ // const [userEmail, setUserEmail] = useState('');
+  //const [password, setPassword] =useState('');
+  //const [emailCode, setEmailCode] = useState(null);
+  //const [resetPassword, setReserPassword] = useState('');
+  //const [isLoading, setIsLoading] = useState(false);
+  //const [message, setMessage] = useState('');
+  //const [error, setError] = useState('')
+  
 enum MODL {
     LOGIN = "LOGIN",
     REGISTER = "REGISTER",

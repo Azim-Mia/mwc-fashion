@@ -32,8 +32,8 @@ const handleProfile =()=>{
    <Image src={notificationImg} alt ="logo" width={28} height={28} className="" />
  <Image src={userImg} onClick={handleProfile} alt ="logo" width={28} height={28} className="cursor-pointer" />
   {isProfileOpen && (<div className="absolute flex flex-col  bg-yellow gap-4 xs:mt-[80px] mt-[90px] right-4 p-4 rounded-md shadow-[0_3px_10px_rgb(0.0.0.2)] z-20">
- <Link href="/profile" className="cursor-pointer hover:border-b-2">Profile</Link>
-<Link href="/logout" className="cursor-pointer hover:border-b-2">Logout</Link>
+ {isLoggedIn && <Link href="/profile" className="cursor-pointer hover:border-b-2">Profile</Link>}
+ {isLoggedIn ? <Link href ="/logout" className="cursor-pointer hover:border-b-2">logout</Link>: <Link href ="/login" className="cursor-pointer hover:border-b-2">login</Link>}
  </div>)}
   </div>
   </>)

@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "mwc-fashion",
   auth:"Azim Islam",
-  description: "dewangonj",
+  description: "Dewangonj",
 };
 
 export default function RootLayout({

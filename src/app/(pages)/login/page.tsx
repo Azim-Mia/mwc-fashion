@@ -29,23 +29,27 @@ enum MODL {
   <form className="flex flex-col gap-8"> 
  <h1 className = "text-2xl font-semibold">{formTitle}</h1>
     { mode === MODL.REGISTER ? (<div>
-      <label forhtml="userName">Username</label>
+      <label>Username:
     <input type="text" id="userName" name="username" placeholder="Enter Name"  className="ring-2 ring-gary-300 rounded-md p-4"/> 
+   </label>
     </div>
     ):null}
     {
      mode === MODL.EMAIL_VERIFICATION ? (<div>
-      <label forhtml="email">E-mail: </label>
+      <label>E-mail: 
     <input type="email" id="email" name="email" placeholder="example@gmail.com"  className="ring-2 ring-gary-300 rounded-md p-4"/> 
+    </label>
     </div>
     ):(<div>
-      <label forhtml="code">Email verification : </label>
+      <label>Email verification :
     <input type="code" id="code" name="email" placeholder="emailCode"  className="ring-2 ring-gary-300 rounded-md p-4"/> 
+    </label>
     </div>)
     }
       { mode === MODL.REGISTER ? (<div>
-      <label forhtml="userName">Username</label>
+      <label>Username:
     <input type="text" id="userName" name="username" placeholder="Enter Name"  className="ring-2 ring-gary-300 rounded-md p-4"/> 
+    </label>
     </div>
     ):null}
   </form>

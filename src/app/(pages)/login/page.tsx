@@ -50,6 +50,7 @@ enum MODL {
     </div>
     ):null}
   </form>
+  <button>submit</button>
   </div>)
 }
 export default LoginPage;

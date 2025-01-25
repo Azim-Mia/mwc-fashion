@@ -14,7 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "hashoin bd",
+  title: "mwc-fashion",
+  auth:"Azim Islam",
   description: "dewangonj",
 };
 

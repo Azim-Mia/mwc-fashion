@@ -44,7 +44,7 @@ enum MODL {
    }else{
      setError('Something problem, Try again.')
    }
-   }catch(err:string){
+   }catch(err as any){
      setIsLoading(false);
      setError(err.message)
    } 

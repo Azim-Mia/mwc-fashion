@@ -1,5 +1,5 @@
 'use client';
-import {useState} from 'react';
+import React,{useState} from 'react';
 
 const LoginPage =()=>{
   const [mode, setMode] = useState('LOGIN');

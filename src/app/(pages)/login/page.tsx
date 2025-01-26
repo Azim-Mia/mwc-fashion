@@ -45,7 +45,7 @@ enum MODL {
    }else{
      setError('Something problem, Try again.')
    }
-   }catch(error: any){
+   }catch(error){
      setIsLoading(false);
      setError(error.message)
    } 
@@ -88,4 +88,8 @@ enum MODL {
   </form>
   </div>)
 }
+LoginPage.propTypes = {
+  error: PropTypes.string.isRequired
+};
+
 export default LoginPage;

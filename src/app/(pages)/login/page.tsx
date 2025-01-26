@@ -45,9 +45,10 @@ enum MODL {
    }else{
      setError('Something problem, Try again.')
    }
-   }catch(error:error){
+   }catch(err){
+     onError(err)
      setIsLoading(false);
-     setError(error.message)
+     setError(err.message)
    } 
  }
   return (<div className ="w-[calc({100vh-80px}] px-4 md:px-8 lg:px-16 xl:px-32 2xl:px-64 flex flex-col gap-3 items-center justify-center text-center mt-24 relative">
@@ -89,7 +90,8 @@ enum MODL {
   </div>)
 }
 LoginPage.propTypes = {
-  error: PropTypes.string.isRequired
+  //other properties
+  onError: PropTypes.func.isRequired,
 };
 
 export default LoginPage;

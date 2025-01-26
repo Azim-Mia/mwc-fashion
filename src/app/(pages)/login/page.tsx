@@ -7,7 +7,7 @@ const LoginPage =()=>{
   const [userEmail, setUserEmail] = useState('');
   const [password, setPassword] =useState('');
   const [emailCode, setEmailCode] = useState(null);
-  const [resetPassword, setReserPassword] = useState('');
+  const [resetPassword] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const [message, setMessage] = useState('');
   const [error, setError] = useState('')

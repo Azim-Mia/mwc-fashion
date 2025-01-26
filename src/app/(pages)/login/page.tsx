@@ -26,9 +26,6 @@ enum MODL {
   ? "Login" : mode === MODL.REGISTER 
   ? "Register" : mode === MODL.RESET_PASSWORD ? "Reset" : "Verify";
  // const wixClient = useWixClient();
- type error = {
-  error:string;
-};
  const handleSubmit=(e: React.FormEvent<HTMLFormElement>)=>{
    e.preventDefault();
    try{
@@ -48,7 +45,7 @@ enum MODL {
    }else{
      setError('Something problem, Try again.')
    }
-   }catch(error : error){
+   }catch(error: any){
      setIsLoading(false);
      setError(error.message)
    } 

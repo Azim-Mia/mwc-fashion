@@ -39,6 +39,7 @@ enum MODL {
      alert('REGISTER')
    }else if(mode === 'LOGIN'){
      //send login request
+     setMessage('Successfull Login');
      console.log(userName,password, userEmail,emailCode,resetPassword)
    }else{
      setError('Something problem, Try again.')

@@ -25,7 +25,7 @@ enum MODL {
   ? "Login" : mode === MODL.REGISTER 
   ? "Register" : mode === MODL.RESET_PASSWORD ? "Reset" : "Verify";
  // const wixClient = useWixClient();
- const handleSubmit=(React.FormEvent<HTMLFormElement>): void=>{
+ const handleSubmit=(React.FormEvent<HTMLFormElement>)=>{
    e.preventDefault();
    try{
    if(mode === 'RESET_PASSWORD'){
